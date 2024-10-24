@@ -1,0 +1,84 @@
+.range-slider__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider__input {
+  width: 12rem;
+  height: 3.8rem;
+  padding: 1rem;
+  align-items: flex-start;
+  color: #000;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.82rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid gray;
+}
+
+.range-slider__input:focus {
+  outline: none;
+}
+
+.range-slider__input::-webkit-outer-spin-button,
+.range-slider__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-slider__input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 0.3rem;
+  margin: 1.2rem 0 0 0;
+  background: #dfdfdf;
+  border-radius: 10px;
+}
+
+.range-slider__track {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #2561ed;
+}
+
+.range-slider input {
+  position: absolute;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none;
+  margin: 0;
+}
+
+.range-slider input[type='range']::-webkit-slider-thumb {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #2561ed;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  pointer-events: auto;
+  appearance: none;
+  cursor: grab;
+}
+
+.range-slider input[type='range']::-moz-range-thumb {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  background: #2561ed;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  pointer-events: auto;
+  -moz-appearance: none;
+  cursor: grab;
+}

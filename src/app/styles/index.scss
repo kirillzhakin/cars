@@ -1,0 +1,17 @@
+@use './normalize.scss';
+
+* {
+	font-weight: 400;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100dvh;
+	font-size: 16px;
+	color: #22202e;
+}
+
+.h-full {
+	height: 100%;
+}
